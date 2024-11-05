@@ -1,0 +1,81 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  color: white;
+  height: 66px;
+
+  .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .Linktag {
+      display: flex;
+      justify-content: center;
+      .logo {
+        width: 70%;
+        cursor: pointer;
+      }
+    }
+
+    .list {
+      display: flex;
+      gap: 30px;
+      .listItem {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: bold;
+        background-color: transparent;
+      }
+    }
+  }
+  .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-right: 50px;
+    .search {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 270px;
+      height: 40px;
+      padding: 0.375rem 0.75rem;
+      font-size: 1rem;
+      font-weight: bold;
+      line-height: 1.5;
+      color: white;
+      background-color: transparent;
+      border: 1px solid white;
+      border-radius: 50px;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      .searchInput {
+        background: none;
+        outline: none;
+        border: none;
+      }
+      .searchIcon {
+        cursor: pointer;
+      }
+    }
+    .loginBtn {
+      height: 40px;
+      background-color: var(--red);
+      border-radius: 18px;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 0px 20px;
+      transition: all 0.2s linear;
+      &:hover {
+        background-color: var(--red);
+        box-shadow: 0 0 20px var(--red);
+      }
+    }
+  }
+}
