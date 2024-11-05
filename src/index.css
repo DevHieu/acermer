@@ -1,19 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+@font-face {
+  font-family: "BRLNSDB";
+  src: local("BRLNSDB"), url(./assets/fonts/BRLNSDB.ttf) format("truetype");
+}
+
 :root {
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --height: 855px;
+
   --red: #c73d37;
-  --redHover: #9e4138;
+  --darkRed: #b72c24;
 }
 
 a {
@@ -28,13 +34,17 @@ a:hover {
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
   box-sizing: border-box;
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  color: white;
   background-color: #333;
   font-family: "Comfortaa", sans-serif;
+  z-index: -10;
+  position: relative;
+  overflow-x: hidden;
 }
 
 ul {
@@ -60,11 +70,6 @@ button {
 button:hover {
   border-color: var(--red);
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  .background {
+    position: absolute;
+    // width: 100% !important;
+    z-index: -10;
+    height: 100vh;
+    right: 0;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translate(40%, 0%);
+    .frame {
+      background: url(/src/assets/image/frames/trailer-frame.png) no-repeat
+        center center;
+      background-size: contain;
+      .video {
+        padding: 20px;
+      }
+    }
+  }
+}

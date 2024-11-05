@@ -1,9 +1,61 @@
 .wrapper {
   margin-top: 66px;
+  background-color: transparent;
+  width: 100%;
+  height: var(--height);
   .background {
-    width: 100%;
     position: absolute;
-    top: 66px;
-    left: 0;
+    width: 100% !important;
+    z-index: -10;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    .logo {
+      width: 75%;
+    }
+    .title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      & h2 {
+        font-family: "BRLNSDB", sans-serif;
+        font-weight: bold;
+        color: var(--darkRed);
+        font-size: 24px;
+      }
+      & h1 {
+        font-family: "BRLNSDB", sans-serif;
+        font-weight: bold;
+        color: var(--red);
+        font-size: 42px;
+      }
+    }
+    .download {
+      font-family: "BRLNSDB", sans-serif;
+      font-size: 42px;
+      color: white;
+      margin-top: 15px;
+      border: none;
+      background: url(../../assets/image/frames/download-frame.png) no-repeat
+        center center;
+      cursor: pointer;
+      background-size: 581px;
+      font-weight: bold;
+      height: auto;
+      width: fit-content;
+      padding: 30px 100px;
+      transition: all 0.2s linear;
+      &:hover {
+        filter: drop-shadow(0 0 20px var(--red));
+        color: var(--darkRed);
+        border: none;
+      }
+    }
   }
 }

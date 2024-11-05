@@ -9,7 +9,7 @@
   width: 100%;
   color: white;
   height: 66px;
-
+  z-index: 10;
   .left {
     display: flex;
     align-items: center;
@@ -54,7 +54,6 @@
       background-color: transparent;
       border: 1px solid white;
       border-radius: 50px;
-      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
       .searchInput {
         background: none;
         outline: none;
