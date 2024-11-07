@@ -19,6 +19,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 30px;
+    ::-webkit-scrollbar {
+      width: 0;
+    }
     .content {
       max-width: 800px;
       max-height: 395px;

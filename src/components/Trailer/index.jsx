@@ -1,5 +1,5 @@
 import styles from "./Trailer.module.scss";
-import background from "../../assets/image/background/Trailer.png";
+import background from "../../assets/image/background/trailer.png";
 import Title from "../Title";
 
 export default function index() {

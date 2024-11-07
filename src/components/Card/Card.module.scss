@@ -1,0 +1,52 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  .background {
+    position: absolute;
+    z-index: -10;
+    height: 100vh;
+    left: 0;
+    filter: brightness(0.5);
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .left {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .right {
+      position: absolute;
+      right: 0;
+      width: 40%;
+      margin-right: 3rem;
+      .content {
+        width: 100%;
+        height: 520px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: url(/src/assets/image/frames/card-frame.png) no-repeat
+          center center;
+        background-size: contain;
+        padding: 30px;
+        & h1 {
+          font-size: 20px;
+          font-weight: 400;
+          color: var(--red);
+        }
+        & p {
+          font-size: 12px;
+          width: 80%;
+        }
+      }
+    }
+  }
+}

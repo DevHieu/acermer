@@ -3,6 +3,8 @@ import Header from "../../components/Header";
 import AboutUs from "../../components/AboutUs";
 import Trailer from "../../components/Trailer";
 import Plot from "../../components/Plot";
+import Card from "../../components/Card";
+import Map from "../../components/Map";
 
 export default function MainMenu() {
   return (
@@ -11,6 +13,8 @@ export default function MainMenu() {
       <AboutUs />
       <Trailer />
       <Plot />
+      <Card />
+      <Map />
     </div>
   );
 }
