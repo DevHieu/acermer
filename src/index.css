@@ -22,6 +22,10 @@
   --darkRed: #b72c24;
 }
 
+#root {
+  width: 100%;
+}
+
 a {
   font-weight: 500;
   color: var(--red);
