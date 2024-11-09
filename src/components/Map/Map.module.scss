@@ -11,6 +11,13 @@
     height: 100vh;
     left: 0;
     filter: brightness(0.8);
+    mask-image: linear-gradient(
+      transparent,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0),
+      rgba(0, 0, 0, 0.5),
+      transparent
+    );
   }
   .container {
     display: flex;

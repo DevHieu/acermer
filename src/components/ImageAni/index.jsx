@@ -32,15 +32,13 @@ export default function VideoPlayer({
   }, []);
 
   return (
-    <div>
-      <video
-        ref={playerRef}
-        id={id}
-        className="cld-video-player cld-fluid"
-        {...props}
-        width={width}
-        height={height}
-      ></video>
-    </div>
+    <video
+      ref={playerRef}
+      id={id}
+      className="cld-video-player cld-fluid"
+      {...props}
+      width={width}
+      height={height}
+    ></video>
   );
 }

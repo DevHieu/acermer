@@ -44,11 +44,12 @@ body {
   place-items: center;
   min-width: 320px;
   color: white;
-  background-color: #333;
+  background-color: black;
   font-family: "Comfortaa", sans-serif;
   z-index: -10;
   position: relative;
   overflow-x: hidden;
+  overflow-anchor: none;
 }
 
 ul {

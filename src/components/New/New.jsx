@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import styles from "./New.module.scss";
-import background from "../../assets/image/background/new.png";
 import data from "../../data/NewData";
 import cityImg from "../../assets/image/city.png";
 
@@ -20,7 +19,7 @@ export default function New() {
   return (
     <div className={styles.wrapper}>
       <img
-        src={background}
+        src="https://res.cloudinary.com/dyjeugvrl/image/upload/v1731076274/elj1iexkzty9iihxqyzx.webp"
         alt="background"
         className={styles.background}
         loading="lazy"

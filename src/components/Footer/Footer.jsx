@@ -1,5 +1,4 @@
 import styles from "./Footer.module.scss";
-import background from "../../assets/image/background/footer.png";
 import logo from "../../assets/image/logo.png";
 import gameLogo from "../../assets/image/game-logo.png";
 import warning from "../../assets/image/warning.png";
@@ -8,7 +7,7 @@ export default function Footer() {
   return (
     <div className={styles.wrapper}>
       <img
-        src={background}
+        src="https://res.cloudinary.com/dyjeugvrl/image/upload/v1731076273/mpkuluz2tfchclxyxwrl.webp"
         alt="background"
         className={styles.background}
         loading="lazy"
