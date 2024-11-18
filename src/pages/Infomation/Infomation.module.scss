@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  .background {
+    position: fixed;
+    z-index: -10;
+    height: 100vh;
+    right: 0;
+    filter: brightness(0.3);
+  }
+  .wrapper {
+    text-align: center;
+    margin-top: 10rem;
+    width: 60rem;
+    .content {
+      text-align: justify;
+    }
+  }
+}

@@ -7,25 +7,16 @@ import rightArrow from "../../assets/image/arrows/card-right.png";
 import gsap from "gsap";
 import data from "../../data/CardData";
 
-const image1 = "src/assets/image/card.png";
-const image2 = "src/assets/image/card.png";
-const image3 = "src/assets/image/card.png";
-const image4 = "src/assets/image/card.png";
-const image5 = "src/assets/image/card.png";
-const image6 = "src/assets/image/card.png";
-
-const imageArray = [image1, image2, image3, image4, image5, image6];
-
 export default function Card() {
   const [midImage, setMidImage] = useState(0);
   const [rightImage, setRightImage] = useState(1);
-  const [leftImage, setLeftImage] = useState(imageArray.length - 1);
+  const [leftImage, setLeftImage] = useState(data.length - 1);
 
   useEffect(() => {
     if (midImage == 0) {
-      setLeftImage(imageArray.length - 1);
+      setLeftImage(data.length - 1);
       setRightImage(1);
-    } else if (midImage == imageArray.length - 1) {
+    } else if (midImage == data.length - 1) {
       setRightImage(0);
       setLeftImage(midImage - 1);
     } else {
@@ -35,7 +26,7 @@ export default function Card() {
   }, [midImage]);
 
   const Increment = () => {
-    if (midImage == imageArray.length - 1) {
+    if (midImage == data.length - 1) {
       setMidImage(0);
     } else {
       setMidImage(midImage + 1);
@@ -59,7 +50,7 @@ export default function Card() {
   };
   const Decrement = () => {
     if (midImage == 0) {
-      setMidImage(imageArray.length - 1);
+      setMidImage(data.length - 1);
     } else {
       setMidImage(midImage - 1);
     }

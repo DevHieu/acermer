@@ -19,15 +19,27 @@
       transparent
     );
   }
+  .container {
+    .image {
+      cursor: pointer;
+      transition: all 0.1s linear;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
 }
 
 .box {
   display: flex;
   align-items: center;
   margin: 0 5rem;
-  & img {
-    width: 23%;
+  & a {
+    & img {
+      width: 23%;
+    }
   }
+
   .right {
     width: fit-content;
     position: absolute;
@@ -49,6 +61,10 @@
 }
 .reverse {
   flex-direction: row-reverse !important;
+  & a {
+    display: flex;
+    justify-content: flex-end;
+  }
   .left {
     width: fit-content;
     position: absolute;

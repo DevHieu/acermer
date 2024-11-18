@@ -28,8 +28,6 @@
 
 a {
   font-weight: 500;
-  color: var(--red);
-  text-decoration: inherit;
 }
 a:hover {
   color: var(--red);
@@ -68,7 +66,6 @@ button {
   font-weight: 500;
   font-family: inherit;
   cursor: pointer;
-  background-color: transparent;
 }
 @media (prefers-color-scheme: light) {
   :root {

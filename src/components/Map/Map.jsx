@@ -1,19 +1,27 @@
+import { useEffect, useState } from "react";
 import styles from "./Map.module.scss";
 import "./index.css";
 import Title from "../Title";
 import VideoPlayer from "../ImageAni/index";
+import MapData from "../../data/MapData";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation } from "swiper/modules";
 
-import img1 from "../../assets/image/background/explorer.png";
-import img2 from "../../assets/image/background/aboutUs.png";
-import img3 from "../../assets/image/background/plot.png";
 import leftArrow from "../../assets/image/arrows/map-left.png";
 import rightArrow from "../../assets/image/arrows/map-right.png";
 
 export default function Map() {
+  const [activeStep, setActiveStep] = useState(0);
+  const [title, setTitle] = useState(MapData[activeStep].title);
+  const [content, setContent] = useState(MapData[activeStep].content);
+
+  useEffect(() => {
+    setTitle(MapData[activeStep].title);
+    setContent(MapData[activeStep].content);
+  }, [activeStep]);
+
   return (
     <div className={styles.wrapper}>
       <img
@@ -33,57 +41,24 @@ export default function Map() {
             loop={true}
             navigation={{ nextEl: ".arrow-right", prevEl: ".arrow-left" }}
             modules={[Navigation]}
+            onActiveIndexChange={({ realIndex }) => {
+              setActiveStep(realIndex);
+            }}
           >
-            <SwiperSlide>
-              <VideoPlayer
-                id="player1"
-                publicId="Map_2_render_GIF_1p_jc09m2"
-                playerConfig={{
-                  muted: true,
-                }}
-                width={100}
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src={img1}
-                alt="img1"
-                className="slideImage"
-                loading="lazy"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src={img2}
-                alt="img1"
-                className="slideImage"
-                loading="lazy"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src={img3}
-                alt="img1"
-                className="slideImage"
-                loading="lazy"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src={img1}
-                alt="img1"
-                className="slideImage"
-                loading="lazy"
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img
-                src={img2}
-                alt="img1"
-                className="slideImage"
-                loading="lazy"
-              />
-            </SwiperSlide>
+            {MapData.map((data, index) => {
+              return (
+                <SwiperSlide key={index}>
+                  <VideoPlayer
+                    id="player1"
+                    publicId={data.publicId}
+                    playerConfig={{
+                      muted: true,
+                    }}
+                    width={100}
+                  />
+                </SwiperSlide>
+              );
+            })}
           </Swiper>
           <div className={styles.arrow}>
             <button className="arrow-left arrow">
@@ -95,13 +70,8 @@ export default function Map() {
           </div>
         </div>
         <div className={styles.content}>
-          <h1>HELIGOS</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis
-            asufhsdfkhasdfjkasdhfjksdhfjkasdhfjkasdfhk
-          </p>
+          <h1>{title}</h1>
+          <p>{content}</p>
         </div>
       </div>
     </div>

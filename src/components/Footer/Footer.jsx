@@ -1,7 +1,7 @@
 import styles from "./Footer.module.scss";
-import logo from "../../assets/image/logo.png";
-import gameLogo from "../../assets/image/game-logo.png";
-import warning from "../../assets/image/warning.png";
+import logo from "../../assets/image/logo.webp";
+import gameLogo from "../../assets/image/game-logo.webp";
+import warning from "../../assets/image/warning.webp";
 
 export default function Footer() {
   return (

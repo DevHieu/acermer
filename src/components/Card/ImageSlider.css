@@ -41,8 +41,11 @@
 }
 .btn {
   border: none;
+  filter: none;
+  transition: all 0.1s linear;
 }
 .btn:hover {
+  filter: drop-shadow(0 0 10px white);
   border: none;
 }
 

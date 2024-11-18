@@ -1,5 +1,5 @@
 import styles from "./Header.module.scss";
-import logo from "../../assets/image/game-logo.png";
+import logo from "../../assets/image/game-logo.webp";
 
 export default function Header() {
   return (

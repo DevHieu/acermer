@@ -29,7 +29,7 @@
     .slideWrapper {
       max-width: 200%;
       .arrow {
-        z-index: 10;
+        z-index: 9;
         transform: translate(53.5em, -12em);
         position: relative;
       }
@@ -40,19 +40,26 @@
       align-items: center;
       flex-direction: column;
       width: 45rem;
-      max-height: 10rem;
-      background: url(/src/assets/image/frames/map-frame.png) no-repeat center
+      height: 11rem;
+      background: url(/src/assets/image/frames/map-frame.webp) no-repeat center
         center;
       background-size: contain;
       padding: 40px;
       transform: translateY(-3rem);
-
       & h1 {
         font-size: 15px;
+        font-size: 15px;
+        position: absolute;
+        top: 2rem;
       }
       & p {
         font-size: 12px;
         max-width: 90%;
+        max-height: 3rem;
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+          display: none;
+        }
       }
     }
   }

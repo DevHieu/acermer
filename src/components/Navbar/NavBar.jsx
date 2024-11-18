@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./NavBar.module.scss";
-import small_logo from "../../assets/image/small-logo.png";
+import small_logo from "../../assets/image/small-logo.webp";
 
 import { IoIosSearch } from "react-icons/io";
 

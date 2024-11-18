@@ -17,9 +17,19 @@
   width: 100%;
   object-fit: cover;
 }
+.arrow {
+  background-color: transparent !important;
+  border: none;
+  filter: none;
+  transition: all 0.1s linear;
+}
 
 .arrow img {
   width: 35px;
+}
+.arrow:hover {
+  filter: drop-shadow(0 0 10px var(--red));
+  border: none;
 }
 .arrow-right {
   transform: translateX(75rem);
