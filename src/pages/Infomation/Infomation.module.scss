@@ -1,21 +1,39 @@
 .container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
   width: 100%;
+  margin-top: 7em;
   .background {
     position: fixed;
     z-index: -10;
     height: 100vh;
+    top: 0;
     right: 0;
     filter: brightness(0.3);
   }
   .wrapper {
-    text-align: center;
-    margin-top: 10rem;
-    width: 60rem;
-    .content {
-      text-align: justify;
+    display: flex;
+    margin-top: 5em;
+    .left {
+      text-align: center;
+      width: 60%;
+      .content {
+        text-align: justify;
+        width: 40em;
+      }
+    }
+    .right {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5em;
+      & img {
+        width: 30em;
+      }
     }
   }
 }

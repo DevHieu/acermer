@@ -1,9 +1,9 @@
 import styles from "./AboutUs.module.scss";
 import Title from "../Title";
 
-export default function AboutUs() {
+const AboutUs = () => {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="AboutUs">
       <img
         src="https://res.cloudinary.com/dyjeugvrl/image/upload/v1731076274/id5nnkny1emflpfw9si1.webp"
         alt="background"
@@ -32,4 +32,6 @@ export default function AboutUs() {
       </div>
     </div>
   );
-}
+};
+
+export default AboutUs;

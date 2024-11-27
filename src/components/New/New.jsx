@@ -2,19 +2,16 @@
 import { Link } from "react-router-dom";
 import styles from "./New.module.scss";
 import data from "../../data/NewData";
-import cityImg from "../../assets/image/city.png";
 
-const Content = ({ title, content, index, reverse }) => {
-  console.log(index);
-
+const Content = ({ title, content, img, index, reverse }) => {
   return (
     <div className={reverse ? styles.box : `${styles.box} ${styles.reverse}`}>
       <Link to={`/info/${index}`}>
-        <img src={cityImg} alt="image" className={styles.image} />
+        <img src={img} alt="image" className={styles.image} />
       </Link>
       <div className={reverse ? styles.right : styles.left}>
         <h1>{title}</h1>
-        <p>{content}</p>
+        {content}
       </div>
     </div>
   );
@@ -22,7 +19,7 @@ const Content = ({ title, content, index, reverse }) => {
 
 export default function New() {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="New">
       <img
         src="https://res.cloudinary.com/dyjeugvrl/image/upload/v1731076274/elj1iexkzty9iihxqyzx.webp"
         alt="background"
@@ -36,6 +33,7 @@ export default function New() {
               key={index}
               title={value.title}
               content={value.content}
+              img={value.img}
               index={index}
               reverse={index % 2 == 0}
             />

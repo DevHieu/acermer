@@ -5,7 +5,7 @@ import warning from "../../assets/image/warning.webp";
 
 export default function Footer() {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="Footer">
       <img
         src="https://res.cloudinary.com/dyjeugvrl/image/upload/v1731076273/mpkuluz2tfchclxyxwrl.webp"
         alt="background"

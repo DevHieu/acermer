@@ -3,7 +3,7 @@ import Title from "../Title";
 
 export default function Plot() {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="Plot">
       <img
         src="https://res.cloudinary.com/dyjeugvrl/image/upload/v1731076274/usoo9jnlsmtjvspve9xd.webp"
         alt="background"

@@ -3,7 +3,7 @@ import logo from "../../assets/image/game-logo.webp";
 
 export default function Header() {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} id="Header">
       <img
         src="https://res.cloudinary.com/dyjeugvrl/image/upload/v1731076272/kows0ufage2yhyzkbamm.webp"
         alt="background"

@@ -1,4 +1,6 @@
 import styles from "./MainMenu.module.scss";
+import { Element } from "react-scroll";
+import NavBar from "../../components/Navbar";
 import Header from "../../components/Header";
 import AboutUs from "../../components/AboutUs";
 import Trailer from "../../components/Trailer";
@@ -11,8 +13,11 @@ import Footer from "../../components/Footer";
 export default function MainMenu() {
   return (
     <div className={styles.container}>
+      <NavBar />
       <Header />
-      <AboutUs />
+      <Element name="myScrollToElement">
+        <AboutUs />
+      </Element>
       <Trailer />
       <Plot />
       <Card />
