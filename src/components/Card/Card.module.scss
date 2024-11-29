@@ -46,13 +46,15 @@
         overflow-y: auto;
         & h1 {
           font-size: 20px;
-          font-weight: 400;
+          font-weight: 600;
           color: var(--red);
         }
         & p {
-          font-size: 12px;
+          font-size: 14px;
           width: 80%;
           overflow-y: auto;
+          line-height: 1.8;
+
           &::-webkit-scrollbar {
             display: none;
           }

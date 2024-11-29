@@ -91,7 +91,7 @@ export default function Card() {
               <div className="ImageSliderContainter">
                 <div className="Images">
                   <img
-                    src={data[rightImage].img}
+                    src={data[leftImage].img}
                     alt="card"
                     className="rightImage"
                     loading="lazy"
@@ -103,7 +103,7 @@ export default function Card() {
                     loading="lazy"
                   />
                   <img
-                    src={data[leftImage].img}
+                    src={data[rightImage].img}
                     alt="card"
                     className="leftImage"
                     loading="lazy"
@@ -119,7 +119,7 @@ export default function Card() {
         <div className={styles.right}>
           <div className={styles.content}>
             <h1>{data[midImage].title}</h1>
-            <p>{data[midImage].content}</p>
+            {data[midImage].content}
           </div>
         </div>
       </div>

@@ -53,9 +53,9 @@
         top: 2rem;
       }
       & p {
-        font-size: 12px;
         max-width: 90%;
         max-height: 3rem;
+        font-size: 12px;
         overflow-y: auto;
         &::-webkit-scrollbar {
           display: none;
