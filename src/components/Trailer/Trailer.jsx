@@ -2,7 +2,7 @@ import styles from "./Trailer.module.scss";
 import Title from "../Title";
 
 export default function Trailer() {
-  const embedId = "u83VdXAVq08";
+  const embedId = "qsnNhVwAJvg";
   return (
     <div className={styles.wrapper}>
       <img
