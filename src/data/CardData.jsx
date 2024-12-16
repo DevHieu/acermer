@@ -1,6 +1,6 @@
 const sliderData = [
   {
-    img: "https://res.cloudinary.com/dyjeugvrl/image/upload/v1732873498/card1_hl05bx.webp",
+    img: "https://res.cloudinary.com/dyjeugvrl/image/upload/v1734351706/card1_hl05bx.webp",
     title: "Spinbasilsk",
     content: (
       <p>
@@ -23,7 +23,7 @@ const sliderData = [
     ),
   },
   {
-    img: "https://res.cloudinary.com/dyjeugvrl/image/upload/v1732873498/card2_cd8sg3.webp",
+    img: "https://res.cloudinary.com/dyjeugvrl/image/upload/v1734351728/card2_cd8sg3.webp",
     title: "Scyblaster",
     content: (
       <p>
@@ -45,7 +45,7 @@ const sliderData = [
     ),
   },
   {
-    img: "https://res.cloudinary.com/dyjeugvrl/image/upload/v1732873497/card3_rkiiqy.webp",
+    img: "https://res.cloudinary.com/dyjeugvrl/image/upload/v1734351777/card3_rkiiqy.webp",
     title: "Hipoly Sidam",
     content: (
       <p>
@@ -61,7 +61,7 @@ const sliderData = [
     ),
   },
   {
-    img: "https://res.cloudinary.com/dyjeugvrl/image/upload/v1732873497/card4_cycl16.webp",
+    img: "https://res.cloudinary.com/dyjeugvrl/image/upload/v1734351752/card4_cycl16.webp",
     title: "Derman",
     content: (
       <p>
@@ -101,7 +101,7 @@ const sliderData = [
     ),
   },
   {
-    img: "https://res.cloudinary.com/dyjeugvrl/image/upload/v1732873497/card6_hyqo9s.webp",
+    img: "https://res.cloudinary.com/dyjeugvrl/image/upload/v1734351764/card6_hyqo9s.webp",
     title: "Canis Bracea",
     content: (
       <p>
@@ -131,7 +131,7 @@ const sliderData = [
     ),
   },
   {
-    img: "https://res.cloudinary.com/dyjeugvrl/image/upload/v1732873497/card8_lbdckq.webp",
+    img: "https://res.cloudinary.com/dyjeugvrl/image/upload/v1734351742/card8_lbdckq.webp",
     title: "Neriva",
     content: (
       <p>
