@@ -79,27 +79,27 @@ const sliderData = [
       </p>
     ),
   },
-  {
-    img: "https://res.cloudinary.com/dyjeugvrl/image/upload/v1732873497/card5_sxll4p.webp",
-    title: "Nielva",
-    content: (
-      <p>
-        Name: Nielva
-        <br /> Map: nightmare
-        <br /> High: - thân 2.5m, đuôi 5m, 2 chi dài 4m tối đa chiều dài, 2 chi
-        phụ 1m có lưỡi dao 60cm
-        <br /> Khu vực sinh sống: Trải dài khắp khu vực nightmare, nhưng ưa
-        thích các khu vực bằng phẳng.
-        <br /> Đặc điểm: 1 chủng loài được ghi nhận từ hơn 1000 năm trước, đã
-        sinh sống rất lâu trên nightmare, vẻ ngoài kinh dị của nó làm cho nhiều
-        người sợ hãi. Nielva có phần sương sọ bên ngoài cơ thể cứng có thể bảo
-        vệ các cơ quan quan trọng, miệng tiến hóa nhô dài ra như vòi, thêm các
-        xúc tu phụ có chức năng giữ chặt con mồi, di chuyển bằng cách trườn và
-        giữ thăng bằng bằng 2 chi lớn phía trước, tấn công bằng 2 chi phụ nhọn
-        và sắc, 2 chi trước có thể tấn công tầm trung, quất, tát...
-      </p>
-    ),
-  },
+  // {
+  //   img: "https://res.cloudinary.com/dyjeugvrl/image/upload/v1732873497/card5_sxll4p.webp",
+  //   title: "Nielva",
+  //   content: (
+  //     <p>
+  //       Name: Nielva
+  //       <br /> Map: nightmare
+  //       <br /> High: - thân 2.5m, đuôi 5m, 2 chi dài 4m tối đa chiều dài, 2 chi
+  //       phụ 1m có lưỡi dao 60cm
+  //       <br /> Khu vực sinh sống: Trải dài khắp khu vực nightmare, nhưng ưa
+  //       thích các khu vực bằng phẳng.
+  //       <br /> Đặc điểm: 1 chủng loài được ghi nhận từ hơn 1000 năm trước, đã
+  //       sinh sống rất lâu trên nightmare, vẻ ngoài kinh dị của nó làm cho nhiều
+  //       người sợ hãi. Nielva có phần sương sọ bên ngoài cơ thể cứng có thể bảo
+  //       vệ các cơ quan quan trọng, miệng tiến hóa nhô dài ra như vòi, thêm các
+  //       xúc tu phụ có chức năng giữ chặt con mồi, di chuyển bằng cách trườn và
+  //       giữ thăng bằng bằng 2 chi lớn phía trước, tấn công bằng 2 chi phụ nhọn
+  //       và sắc, 2 chi trước có thể tấn công tầm trung, quất, tát...
+  //     </p>
+  //   ),
+  // },
   {
     img: "https://res.cloudinary.com/dyjeugvrl/image/upload/v1734351764/card6_hyqo9s.webp",
     title: "Canis Bracea",
@@ -115,21 +115,21 @@ const sliderData = [
       </p>
     ),
   },
-  {
-    img: "https://res.cloudinary.com/dyjeugvrl/image/upload/v1732873497/card7_bba6tg.webp",
-    title: "Graybulad",
-    content: (
-      <p>
-        Graybulad là thực thể được lấy cảm hứng từ cá đuối và rồng, có kích
-        thước to đến 3m, không thù địch và là loài ăn các bông Luyet do đó khi
-        cắc thực thể này xuất hiện nay là lững trên bầu trời thì cũng chính là
-        dấu hiệu của 1 cơn bão tuyết sắp kéo đến. Con người khi thấy Graybulad
-        đều có 1 dữ cảm chẳng lành sắp kéo đến. Do đã sống được hàng ngàn năm và
-        có đặt tính bay lượng nên đây cũng chính là biểu tượng của những vùng
-        lạnh giá.
-      </p>
-    ),
-  },
+  // {
+  //   img: "https://res.cloudinary.com/dyjeugvrl/image/upload/v1732873497/card7_bba6tg.webp",
+  //   title: "Graybulad",
+  //   content: (
+  //     <p>
+  //       Graybulad là thực thể được lấy cảm hứng từ cá đuối và rồng, có kích
+  //       thước to đến 3m, không thù địch và là loài ăn các bông Luyet do đó khi
+  //       cắc thực thể này xuất hiện nay là lững trên bầu trời thì cũng chính là
+  //       dấu hiệu của 1 cơn bão tuyết sắp kéo đến. Con người khi thấy Graybulad
+  //       đều có 1 dữ cảm chẳng lành sắp kéo đến. Do đã sống được hàng ngàn năm và
+  //       có đặt tính bay lượng nên đây cũng chính là biểu tượng của những vùng
+  //       lạnh giá.
+  //     </p>
+  //   ),
+  // },
   {
     img: "https://res.cloudinary.com/dyjeugvrl/image/upload/v1734351742/card8_lbdckq.webp",
     title: "Neriva",
